@@ -22,8 +22,8 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav pl-3">
-        <a class="nav-item nav-link active" href="#">Inicio</a>
-        <a class="nav-item nav-link" href="#">Productos</a>
+        <a class="nav-item nav-link active" href="./index.php">Inicio</a>
+        <a class="nav-item nav-link" href="./listado.php">Productos</a>
         <a class="nav-item nav-link" href="#">Contacto</a>
       </div>
     </div>

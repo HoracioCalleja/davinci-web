@@ -13,11 +13,13 @@
       <div class="row">
         <div class="col-sm-6">
           <div class="card text-center my-3">
+            <img src="../img/nike_negra.jpg" class="card-img-top" alt="Remera blanca nike">
             <div class="card-header">
               <h5 class="card-title">Remera negra Nike</h5>
             </div>
             <div class="card-body">
-              <img src="../img/nike_negra.jpg" class="card-img-top" alt="Remera blanca nike">
+              <h4 class="p-0 m-0"> $640 </h4>
+              <p class="mt-3 mb-0">Remera negra simple</p>
             </div>
             <div class="card-footer">
               <a href="#" class="btn btn-primary">Ver más</a>
@@ -26,39 +28,13 @@
         </div>
         <div class="col-sm-6">
           <div class="card text-center my-3">
+            <img src="../img/nike_negra.jpg" class="card-img-top" alt="Remera blanca nike">
             <div class="card-header">
               <h5 class="card-title">Remera negra Nike</h5>
             </div>
             <div class="card-body">
-              <img src="../img/nike_negra.jpg" class="card-img-top" alt="Remera blanca nike">
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">Ver más</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="card text-center my-3">
-            <div class="card-header">
-              <h5 class="card-title">Remera negra Nike</h5>
-            </div>
-            <div class="card-body">
-              <img src="../img/nike_negra.jpg" class="card-img-top" alt="Remera blanca nike">
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">Ver más</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card text-center my-3">
-            <div class="card-header">
-              <h5 class="card-title">Remera negra Nike</h5>
-            </div>
-            <div class="card-body">
-              <img src="../img/nike_negra.jpg" class="card-img-top" alt="Remera blanca nike">
+              <h4 class="p-0 m-0"> $640 </h4>
+              <p class="mt-3 mb-0">Remera negra simple</p>
             </div>
             <div class="card-footer">
               <a href="#" class="btn btn-primary">Ver más</a>
@@ -69,11 +45,13 @@
       <div class="row">
         <div class="col-sm-6">
           <div class="card text-center my-3">
+            <img src="../img/nike_negra.jpg" class="card-img-top" alt="Remera blanca nike">
             <div class="card-header">
               <h5 class="card-title">Remera negra Nike</h5>
             </div>
             <div class="card-body">
-              <img src="../img/nike_negra.jpg" class="card-img-top" alt="Remera blanca nike">
+              <h4 class="p-0 m-0"> $640 </h4>
+              <p class="mt-3 mb-0">Remera negra simple</p>
             </div>
             <div class="card-footer">
               <a href="#" class="btn btn-primary">Ver más</a>
@@ -82,11 +60,45 @@
         </div>
         <div class="col-sm-6">
           <div class="card text-center my-3">
+            <img src="../img/nike_negra.jpg" class="card-img-top" alt="Remera blanca nike">
             <div class="card-header">
               <h5 class="card-title">Remera negra Nike</h5>
             </div>
             <div class="card-body">
-              <img src="../img/nike_negra.jpg" class="card-img-top" alt="Remera blanca nike">
+              <h4 class="p-0 m-0"> $640 </h4>
+              <p class="mt-3 mb-0">Remera negra simple</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card text-center my-3">
+            <img src="../img/nike_negra.jpg" class="card-img-top" alt="Remera blanca nike">
+            <div class="card-header">
+              <h5 class="card-title">Remera negra Nike</h5>
+            </div>
+            <div class="card-body">
+              <h4 class="p-0 m-0"> $640 </h4>
+              <p class="mt-3 mb-0">Remera negra simple</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card text-center my-3">
+            <img src="../img/nike_negra.jpg" class="card-img-top" alt="Remera blanca nike">
+            <div class="card-header">
+              <h5 class="card-title">Remera negra Nike</h5>
+            </div>
+            <div class="card-body">
+              <h4 class="p-0 m-0"> $640 </h4>
+              <p class="mt-3 mb-0">Remera negra simple</p>
             </div>
             <div class="card-footer">
               <a href="#" class="btn btn-primary">Ver más</a>
