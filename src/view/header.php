@@ -22,9 +22,9 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav pl-3">
-        <a class="nav-item nav-link active" href="./index.php">Inicio</a>
-        <a class="nav-item nav-link" href="./listado.php">Productos</a>
-        <a class="nav-item nav-link" href="./contacto.php">Contacto</a>
+        <a class="nav-item nav-link inicio" href="./index.php">Inicio</a>
+        <a class="nav-item nav-link productos" href="./listado.php">Productos</a>
+        <a class="nav-item nav-link contacto " href="./contacto.php">Contacto</a>
       </div>
     </div>
   </nav>
