@@ -1,6 +1,6 @@
-<div class="container-fluid mt-4 p-4 celeste text-center">
-  <div class="row" >  
-    <div class="col" >
+<div class="container-fluid mb-0 mt-5 py-2 celeste text-center">
+  <div class="row m-auto p-3" >  
+    <div class="col " >
     <p>Walter Molina Soto </p>
     </div>
     <div class="col" >
@@ -13,8 +13,8 @@
     <p>Horacio Calleja</p>
     </div>
   </div>
-  <hr  >
-  <div class="row" >  
+  <hr/>
+  <div class="row m-auto p-3" >  
     <div class="col" >
       <p>Grupo: 1</p>
     </div>

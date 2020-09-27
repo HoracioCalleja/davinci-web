@@ -7,11 +7,11 @@ $categorias = array(
   ),
   2 => array(
     "id_categoria" => "2",
-    "nombre" => "Pantalón"
+    "nombre" => "Pantalon"
   ),
   3 => array(
     "id_categoria" => "3",
-    "nombre" => "Zpatilla"
+    "nombre" => "Zapatilla"
   ),
 );
 $puntero = fopen("categorias.json", "w");

@@ -14,7 +14,7 @@
 <body>
 <header>
 <nav class="navbar celeste navbar-expand-lg navbar-light ">
-    <a class="navbar-brand pl-3" href="#">ComercioDavinci</a>
+    <a class="navbar-brand pl-3" href="./index.php">ComercioDavinci</a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,7 +24,7 @@
       <div class="navbar-nav pl-3">
         <a class="nav-item nav-link active" href="./index.php">Inicio</a>
         <a class="nav-item nav-link" href="./listado.php">Productos</a>
-        <a class="nav-item nav-link" href="#">Contacto</a>
+        <a class="nav-item nav-link" href="./contacto.php">Contacto</a>
       </div>
     </div>
   </nav>

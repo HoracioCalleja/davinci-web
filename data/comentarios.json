@@ -1,0 +1,58 @@
+{
+  "1": {
+    "id": 1,
+    "id_producto": 1,
+    "mensaje": "Lindo producto",
+    "estrellas": 4,
+    "email": "guillecapo@gmail.com",
+    "fechaRealizada": "11\/08\/2020"
+  },
+  "2": {
+    "id": 2,
+    "id_producto": 3,
+    "mensaje": "Distinto a la foto",
+    "estrellas": 3,
+    "email": "eugecapa@gmail.com",
+    "fechaRealizada": "11\/08\/2020"
+  },
+  "3": {
+    "id": 3,
+    "id_producto": 5,
+    "mensaje": "Muy lindo producto",
+    "estrellas": 5,
+    "email": "gmauro@gmail.com",
+    "fechaRealizada": "11\/03\/2020"
+  },
+  "4": {
+    "id": 4,
+    "id_producto": 12,
+    "mensaje": "Me gust\u00f3 mucho",
+    "estrellas": 5,
+    "email": "sarasa@gmail.com",
+    "fechaRealizada": "21\/3\/2019"
+  },
+  "5": {
+    "id": 5,
+    "id_producto": 7,
+    "mensaje": "Me qued\u00f3 perfecto",
+    "estrellas": 4,
+    "email": "charly@gmail.com",
+    "fechaRealizada": "08\/08\/2020"
+  },
+  "6": {
+    "id": 6,
+    "id_producto": 15,
+    "mensaje": "Conforme con este producto",
+    "estrellas": 3,
+    "email": "milenasarasa@gmail.com",
+    "fechaRealizada": "11\/11\/2011"
+  },
+  "7": {
+    "id": 7,
+    "id_producto": 4,
+    "mensaje": "No me gust\u00f3 la calidad",
+    "estrellas": 2,
+    "email": "criticador@gmail.com",
+    "fechaRealizada": "31\/12\/2020"
+  }
+}
