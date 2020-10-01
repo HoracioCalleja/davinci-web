@@ -14,7 +14,7 @@ $categorias = array(
     "nombre" => "Zapatilla"
   ),
 );
-$puntero = fopen("categorias.json", "w");
+$puntero = fopen("../../data/categorias.json", "w");
 
 $categoriasJSON = json_encode($categorias);
 

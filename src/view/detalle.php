@@ -7,10 +7,10 @@
     </div>
     <div class="col-4 m-auto py-3 border">
       <h2 class="py-3">Nike</h3>
-        <p class=""> <strong> Remera Nike negra </strong> </p>
-        <p>Remera de algodón para entrenar</p>
+        <p class=""> <strong> REMERA NIKE ICON CLASH</strong> </p>
+        <p>REMERA NIKE ICON CLASH está confeccionada con tela tejida suave y tiene un estilo actualizado y un estampado dibujado aporta un gran look.</p>
         <p>Talles: S - M - L - XL - XXL</p>
-        <p class=""> Precio: <strong> $1700 </strong> </p>
+        <p class=""> Precio: <strong> $1840 </strong> </p>
         <button type="button" class="btn btn-primary">Comprar</button>
     </div>
   </div>
@@ -27,7 +27,7 @@
       <form action="" method="">
         <div class="form-group my-4">
           <label for="email">Su email</label>
-          <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ej: horacio@lohizo.com">
+          <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ej: pepe123@gmail.com">
           <small id="emailHelp" class="form-text text-muted">No compartiremos tu email</small>
         </div>
         <div class="form-group my-4">
