@@ -20,7 +20,7 @@ $productos = array(
     "nombre" => "Pantalón puma",
     "talles" => array(""),
     "descripcion" => "Pantalón puma",
-    "imagen" => "../img/",
+    "imagen" => "../img/pantalon_puma1.jpg",
     "destacado" => false,
   ),
   3 => array(
@@ -31,7 +31,7 @@ $productos = array(
     "nombre" => "Pantalón nike",
     "talles" => array(""),
     "descripcion" => "Pantalón nike",
-    "imagen" => "../img/",
+    "imagen" => "../img/pantalon_nike1.jpg",
     "destacado" => true,
   ),
   4 => array(
@@ -42,7 +42,7 @@ $productos = array(
     "nombre" => "Zapatilla nike",
     "talles" => array(""),
     "descripcion" => "Pantalón nike",
-    "imagen" => "../img/",
+    "imagen" => "../img/zapatilla_nike1.jpg",
     "destacado" => false,
   ),
   5 => array(
@@ -53,7 +53,7 @@ $productos = array(
     "nombre" => "Remera puma",
     "talles" => array(""),
     "descripcion" => "Remera puma",
-    "imagen" => "../img/",
+    "imagen" => "../img/remera_puma1.jpg",
     "destacado" => true,
   ),
   6 => array(
@@ -64,7 +64,7 @@ $productos = array(
     "nombre" => "Zapatilla puma",
     "talles" => array(""),
     "descripcion" => "Zapatilla puma",
-    "imagen" => "../img/",
+    "imagen" => "../img/zapatilla_puma1.jpg",
     "destacado" => false,
   ),
   7 => array(
@@ -75,7 +75,7 @@ $productos = array(
     "nombre" => "Remera adidas",
     "talles" => array(""),
     "descripcion" => "Remera adidas",
-    "imagen" => "../img/",
+    "imagen" => "../img/remera_adidas1.jpg",
     "destacado" => true,
   ),
   8 => array(
@@ -86,7 +86,7 @@ $productos = array(
     "nombre" => "Pantalón adidas",
     "talles" => array(""),
     "descripcion" => "Pantalón adidas",
-    "imagen" => "../img/",
+    "imagen" => "../img/pantalon_adidas1.jpg",
     "destacado" => false,
   ),
   9 => array(
@@ -97,7 +97,7 @@ $productos = array(
     "nombre" => "Zapatilla adidas",
     "talles" => array(""),
     "descripcion" => "Zapatila adidas",
-    "imagen" => "../img/",
+    "imagen" => "../img/zapatilla_adidas1.jpg",
     "destacado" => false,
   ),
   10 => array(
@@ -108,7 +108,7 @@ $productos = array(
     "nombre" => "Remera reebok",
     "talles" => array(""),
     "descripcion" => "Remera reebok",
-    "imagen" => "../img/",
+    "imagen" => "../img/remera_reebok1.jpg",
     "destacado" => true,
   ),
   11 => array(
@@ -119,7 +119,7 @@ $productos = array(
     "nombre" => "Pantalón reebok",
     "talles" => array(""),
     "descripcion" => "Pantalón reebok",
-    "imagen" => "../img/",
+    "imagen" => "../img/pantalon_reebok1.jpg",
     "destacado" => false,
   ),
   12 => array(
@@ -130,7 +130,7 @@ $productos = array(
     "nombre" => "Zapatilla reebok",
     "talles" => array(""),
     "descripcion" => "Zapatilla reebok",
-    "imagen" => "../img/",
+    "imagen" => "../img/zapatilla_reebok1.jpg",
     "destacado" => false,
   ),
   13 => array(
@@ -141,7 +141,7 @@ $productos = array(
     "nombre" => "Remera asics",
     "talles" => array(""),
     "descripcion" => "Remera asics",
-    "imagen" => "../img/",
+    "imagen" => "../img/remera_asics1.jpg",
     "destacado" => true,
   ),
   14 => array(
@@ -152,7 +152,7 @@ $productos = array(
     "nombre" => "Pantalón asics",
     "talles" => array(""),
     "descripcion" => "Pantalón asics",
-    "imagen" => "../img/",
+    "imagen" => "../img/pantalon_asics1.jpg",
     "destacado" => false,
   ),
   15 => array(
@@ -163,7 +163,7 @@ $productos = array(
     "nombre" => "Zapatilla asics",
     "talles" => array(""),
     "descripcion" => "Zapatilla asics",
-    "imagen" => "../img/",
+    "imagen" => "../img/zapatilla_asics1.jpg",
     "destacado" => false,
   ),  
 );

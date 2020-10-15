@@ -10,9 +10,7 @@
   <div class="row px-5 text-center my-5">
 
 
-    <?php include('aside.php'); ?>
-
-    <div class="col-sm-9 col-md-8  px-5 mb-5">
+    <div class="col">
       <div class="row">
         <div class="col-sm-6">
           <div class="card text-center my-3">
