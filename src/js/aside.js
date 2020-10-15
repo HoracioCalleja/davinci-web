@@ -1,7 +1,11 @@
 const d = document,
   // $buscador = d.querySelector(".buscador"),
   $categorias = d.querySelectorAll(".categoria"),
-  $marcas = d.querySelectorAll(".marca");
+  $marcas = d.querySelectorAll(".marca"),
+  $listaFiltros = d.querySelector(".lista-filtros"),
+  categoriaId = $listaFiltros.dataset.categoria,
+  marcaId = $listaFiltros.dataset.marca;
+
 d.addEventListener("click", (e) => {
   if (e.target.matches(".categoria") || e.target.matches(".marca")) {
     const $selectedFilter = e.target;
@@ -24,18 +28,22 @@ d.addEventListener("click", (e) => {
 // });
 
 d.addEventListener("DOMContentLoaded", () => {
-  $marcas.forEach(($filtro) => {
-    let isCached = isSaved($filtro.dataset.id);
-    if (isCached) {
-      $filtro.classList.add("active");
-    }
-  });
-  $categorias.forEach(($filtro) => {
-    let isCached = isSaved($filtro.dataset.id);
-    if (isCached) {
-      $filtro.classList.add("active");
-    }
-  });
+  if (categoriaId === "" && marcaId === "") {
+    localStorage.clear();
+  } else {
+    $marcas.forEach(($filtro) => {
+      let isCached = isSaved($filtro.dataset.id);
+      if (isCached) {
+        $filtro.classList.add("active");
+      }
+    });
+    $categorias.forEach(($filtro) => {
+      let isCached = isSaved($filtro.dataset.id);
+      if (isCached) {
+        $filtro.classList.add("active");
+      }
+    });
+  }
 });
 
 function isSaved(filterKey) {

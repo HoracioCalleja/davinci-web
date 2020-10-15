@@ -22,7 +22,7 @@ $marcas = json_decode(file_get_contents('../../data/marcas.json'), true);
 
 <div class="col-3">
   <form action="">
-    <div class="list-group">
+    <div class="list-group lista-filtros" data-categoria = <?php echo '"'.$id_categoria.'"' ?> data-marca = <?php echo '"'.$id_marca.'"' ?> >
 
       <?php
 
@@ -30,7 +30,7 @@ $marcas = json_decode(file_get_contents('../../data/marcas.json'), true);
 
       foreach ($marcas as $marca) {
         echo '<a class="" href="' . $PAGINA_LISTADO . '?id_marca=' . $marca['id_marca'] . '&id_categoria=' . $id_categoria . '">';
-        echo ' <button data-id="'.$marca['nombre'].'" type="button" data-filtro="marca"  class="list-group-item list-group-item-action marca ">
+        echo ' <button data-id="' . $marca['nombre'] . '" type="button" data-filtro="marca"  class="list-group-item list-group-item-action marca ">
         ' . $marca['nombre'] . '
       </button>';
         echo '</a>';
@@ -40,7 +40,7 @@ $marcas = json_decode(file_get_contents('../../data/marcas.json'), true);
 
       foreach ($categorias as $categoria) {
         echo '<a class="" href="' . $PAGINA_LISTADO . '?id_marca=' . $id_marca . '&id_categoria=' . $categoria['id_categoria'] . '">';
-        echo ' <button type="button" data-id="'. $categoria['nombre'].'" data-filtro="categoria"  class="list-group-item list-group-item-action  categoria ">
+        echo ' <button type="button" data-id="' . $categoria['nombre'] . '" data-filtro="categoria"  class="list-group-item list-group-item-action  categoria ">
         ' . $categoria['nombre'] . '
       </button>';
         echo '</a>';
