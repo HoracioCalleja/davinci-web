@@ -53,9 +53,7 @@ if (isset($_REQUEST['id_categoria'])) {
             }
           }
 
-          
           ?>
-
           
         </div>
       </div>
