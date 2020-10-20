@@ -1,27 +1,45 @@
-<?php require('header.php') ?>;
+<?php require('header.php') ?>
+
+<?php
+
+$PAGINA_DETALLE = 'detalle.php';
+
+if (isset($_REQUEST['id_producto'])) {
+  $id_producto = $_REQUEST['id_producto'];
+} else {
+  $id_producto = '';
+}
+
+$productos = json_decode(file_get_contents('../../data/productos.json'), true);
+
+$producto = $productos[$id_producto];
+
+
+?>
+
 
 <div class="container my-5 p-0">
   <div class="row text-center">
     <div class="col-6 border py-5">
-      <a href="../img/nike_negra.jpg" target="__blank"><img src="../img/nike_negra.jpg" class="card-img-top" alt="Remera blanca nike"></a>
+      <a href=<?php echo $producto["imagen"] ?> target="__blank"><img src=<?php echo $producto["imagen"] ?> class="card-img-top" alt="Remera blanca nike"></a>
     </div>
     <div class="col-4 m-auto py-3 border">
       <h2 class="py-3">Nike</h3>
-        <p class=""> <strong> REMERA NIKE ICON CLASH</strong> </p>
-        <p>REMERA NIKE ICON CLASH está confeccionada con tela tejida suave y tiene un estilo actualizado y un estampado dibujado aporta un gran look.</p>
-        <p>Talles: S - M - L - XL - XXL</p>
-        <p class=""> Precio: <strong> $1840 </strong> </p>
+        <p class=""> <strong> <?php echo $producto["nombre"]?> </strong> </p>
+        <p><?php echo $producto["descripcion"] ?></p>
+        <p><?php foreach ($producto["talles"] as $talle) echo $talle ?></p>
+        <p class=""> Precio: <strong>$<?php echo $producto["precio"] ?> </strong> </p>
         <button type="button" class="btn btn-primary">Comprar</button>
     </div>
   </div>
 </div>
 
-<hr>  
+<hr>
 
 <div class="container form-comentario my-5 ">
   <div class="row ">
-    <div class="col-12  my-3" >
-      <h2 class="titulo-secundario" >Deje su comentario</h2>
+    <div class="col-12  my-3">
+      <h2 class="titulo-secundario">Deje su comentario</h2>
     </div>
     <div class="col-12">
       <form action="" method="">
@@ -35,7 +53,7 @@
           <textarea class="form-control" id="descripcion" name="descripcion" rows="3"></textarea>
         </div>
         <div class="form-group my-4">
-          <label  for="valoracion">Valoración ( 1-5 )</label>
+          <label for="valoracion">Valoración ( 1-5 )</label>
           <select class="custom-select " name="valoracion" id="valoracion">
             <option selected>Seleccione</option>
             <option value="1">1</option>
@@ -54,15 +72,15 @@
 <hr>
 <div class="container ">
   <div class="row ">
-      <div class="col-12 mt-3 " >
-        <h2 class="titulo-secundario" >Comentarios</h2>
-      </div>
-      <div class="col-12 p-4 my-3 border" >
-        <p class="autor border-bottom p-3" name="autor" ><strong>De:</strong> Juan </p>
-        <p class="descripcion p-3 border" name="descripcion" >Me gustó el produco, lo recomiendo.</p>
-        <p class="valoracion p-3" name="valoracion"> <strong>Valoración: </strong> 5/5</p>
-        <p class="fecha font-weight-light p-3">11/05/2020</p>
-      </div>
+    <div class="col-12 mt-3 ">
+      <h2 class="titulo-secundario">Comentarios</h2>
+    </div>
+    <div class="col-12 p-4 my-3 border">
+      <p class="autor border-bottom p-3" name="autor"><strong>De:</strong> Juan </p>
+      <p class="descripcion p-3 border" name="descripcion">Me gustó el produco, lo recomiendo.</p>
+      <p class="valoracion p-3" name="valoracion"> <strong>Valoración: </strong> 5/5</p>
+      <p class="fecha font-weight-light p-3">11/05/2020</p>
+    </div>
   </div>
 </div>
 
