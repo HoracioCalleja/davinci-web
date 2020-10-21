@@ -13,6 +13,15 @@ $comentarios[date('YmdHisU')] = array(
 sleep(1);
 $comentarios[date('YmdHisU')] = array(
   "fecha" => date('d-m-Y H:i:s'),
+  "id_producto" => 1,
+  "descripcion" => "Medio pelo",
+  "valoracion" => 4,
+  "email" => "carlitosbala@gmail.com",
+  "fechaRealizada" => "11/06/2020",
+);
+sleep(1);
+$comentarios[date('YmdHisU')] = array(
+  "fecha" => date('d-m-Y H:i:s'),
   "id_producto" => 3,
   "descripcion" => "Distinto a la foto",
   "valoracion" => 3,
