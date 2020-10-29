@@ -1,0 +1,15 @@
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+:root{
+  --main-color : rgb(105, 185, 231);
+}
+
+.celeste{
+  background-color: var(--main-color);
+}
+
+.ocultar{
+  display: none;
+}

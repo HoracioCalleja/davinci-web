@@ -11,10 +11,12 @@ if ($buscador) {
         ".producto-descripcion"
       ).textContent;
       if (
-        !productoNombre.includes(e.target.value) ||
-        !productoDescripcion.includes(e.target.value)
+        !productoNombre.includes($buscador.value) ||
+        !productoDescripcion.includes($buscador.value)
       ) {
         $producto.classList.add("ocultar");
+      } else {
+        $producto.classList.remove("ocultar");
       }
     });
   });
