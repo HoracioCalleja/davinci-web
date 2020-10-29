@@ -3,13 +3,14 @@ const $buscador = document.querySelector(".buscador"),
 
 if ($buscador) {
   document.addEventListener("keyup", (e) => {
-    console.log($buscador.value);
+    console.log($buscador.value.toLowerCase());
     $productos.forEach(($producto) => {
-      const productoNombre = $producto.querySelector(".producto-nombre")
-        .textContent;
-      const productoDescripcion = $producto.querySelector(
-        ".producto-descripcion"
-      ).textContent;
+      const productoNombre = $producto
+        .querySelector(".producto-nombre")
+        .textContent.toLowerCase();
+      const productoDescripcion = $producto
+        .querySelector(".producto-descripcion")
+        .textContent.toLowerCase();
       if (
         !productoNombre.includes($buscador.value) ||
         !productoDescripcion.includes($buscador.value)

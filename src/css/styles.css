@@ -3,11 +3,23 @@ body{
 }
 
 :root{
-  --main-color : rgb(105, 185, 231);
+  --main-color : rgb(5, 118, 184);
 }
 
-.celeste{
+.barra-navegacion{
   background-color: var(--main-color);
+}
+
+.nav-link{
+  color: white !important;
+}
+
+.nav-link:active{
+  color: black !important;
+}
+
+.buscador-label{
+  color : var(--main-color);
 }
 
 .ocultar{

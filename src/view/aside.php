@@ -22,7 +22,7 @@ $marcas = json_decode(file_get_contents('../../data/marcas.json'), true);
 
 <div class="col-3">
   <form action="">
-    <div class="list-group lista-filtros" data-categoria = <?php echo '"'.$id_categoria.'"' ?> data-marca = <?php echo '"'.$id_marca.'"' ?> >
+    <div class="list-group lista-filtros" data-categoria=<?php echo '"' . $id_categoria . '"' ?> data-marca=<?php echo '"' . $id_marca . '"' ?>>
 
       <?php
 
@@ -49,14 +49,10 @@ $marcas = json_decode(file_get_contents('../../data/marcas.json'), true);
       ?>
     </div>
   </form>
-  <div class="row py-4 ">
-    <div class="col-12">
-      <form class="form-inline">
-        <input class="form-control mr-sm-2 buscador" type="search" placeholder="Ej: Remera negra " aria-label="Buscar" />
-        <button class="btn btn-outline-primary my-2 light " type="submit">
-          Buscar
-        </button>
-      </form>
+  <div class="row py-4">
+    <div class="col-12 mt-3">
+      <h3 class="mb-4 buscador-label"> Busque por producto </h3>
+      <input class="form-control mr-sm-2 buscador p-4 text-center" type="search" placeholder="Ej: Remera nike" aria-label="Buscar" />
     </div>
   </div>
 </div>

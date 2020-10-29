@@ -13,8 +13,8 @@
 
 <body>
 <header>
-<nav class="navbar celeste navbar-expand-lg navbar-light ">
-    <a class="navbar-brand pl-3" href="./index.php">ComercioDavinci</a>
+<nav class="navbar barra-navegacion navbar-expand-lg navbar-light ">
+    <a class="navbar-brand pl-3 nav-link" href="./index.php">ComercioDavinci</a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
