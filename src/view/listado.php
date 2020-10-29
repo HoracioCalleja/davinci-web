@@ -39,11 +39,11 @@ if (isset($_REQUEST['id_categoria'])) {
               echo '<div class="card text-center my-3">';
               echo '<img src="' . $producto['imagen'] . '" class="card-img-top"  alt="' . $producto['nombre'] . '">';
               echo '<div class="card-header">';
-              echo '<h5 class="card-title">' . $producto['nombre'] . '</h5>';
+              echo '<h5 class="card-title producto-nombre">' . $producto['nombre'] . '</h5>';
               echo '</div>';
               echo '<div class="card-body">';
               echo '<h4 class="p-0 m-0">' . '$' . $producto['precio'] . '</h4>';
-              echo '<p class="mt-3 mb-0">' . $producto['descripcion'] . '</p>';
+              echo '<p class="mt-3 mb-0 producto-descripcion">' . $producto['descripcion'] . '</p>';
               echo '</div>';
               echo '<div class="card-footer">';
               echo '<a href="./detalle.php?id_producto=' . $producto['id'] . '" class="btn btn-primary">Ver más</a>';
