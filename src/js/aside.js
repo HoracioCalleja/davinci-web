@@ -1,12 +1,10 @@
-const d = document,
-  // $buscador = d.querySelector(".buscador"),
-  $categorias = d.querySelectorAll(".categoria"),
-  $marcas = d.querySelectorAll(".marca"),
-  $listaFiltros = d.querySelector(".lista-filtros"),
-  categoriaId = $listaFiltros.dataset.categoria,
-  marcaId = $listaFiltros.dataset.marca;
+const $categorias = document.querySelectorAll(".categoria"),
+  $marcas = document.querySelectorAll(".marca"),
+  $listaFiltros = document.querySelector(".lista-filtros"),
+  categoriaId = $listaFiltros.dataset.categorias || null,
+  marcaId = $listaFiltros.dataset.marca || null;
 
-d.addEventListener("click", (e) => {
+$listaFiltros.addEventListener("click", (e) => {
   if (e.target.matches(".categoria") || e.target.matches(".marca")) {
     const $selectedFilter = e.target;
     const key = $selectedFilter.dataset.id;
@@ -22,12 +20,8 @@ d.addEventListener("click", (e) => {
   }
 });
 
-// $buscador.addEventListener("keydown", (e) => {
-//   console.log($buscador.value);
-//   console.log(e.target);
-// });
-
-d.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
+  console.log(categoriaId)
   if (categoriaId === "" && marcaId === "") {
     localStorage.clear();
   } else {

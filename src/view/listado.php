@@ -35,7 +35,7 @@ if (isset($_REQUEST['id_categoria'])) {
             if (($producto['id_categoria'] == $id_categoria || $id_categoria == '')
               && ($producto['id_marca'] == $id_marca || $id_marca == '')
             ) {
-              echo '<div class="col-6">';
+              echo '<div class="col-6 producto">';
               echo '<div class="card text-center my-3">';
               echo '<img src="' . $producto['imagen'] . '" class="card-img-top"  alt="' . $producto['nombre'] . '">';
               echo '<div class="card-header">';
