@@ -2,7 +2,8 @@ const $buscador = document.querySelector(".buscador"),
   $productos = document.querySelectorAll(".producto");
 
 if ($buscador) {
-  $buscador.addEventListener("keydown", (e) => {
+  document.addEventListener("keyup", (e) => {
+    console.log($buscador.value);
     $productos.forEach(($producto) => {
       const productoNombre = $producto.querySelector(".producto-nombre")
         .textContent;
