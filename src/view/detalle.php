@@ -12,10 +12,26 @@ if (isset($_REQUEST['id_producto'])) {
 
 $productos = json_decode(file_get_contents('../../data/productos.json'), true);
 $comentarios = json_decode(file_get_contents('../../data/comentarios.json'), true);
-
-
-
 $producto = $productos[$id_producto];
+
+if (isset($_REQUEST['email']) && isset($_REQUEST['descripcion']) && isset($_REQUEST['valoracion'])) {
+
+  $email = $_REQUEST['email'];
+  $comentario = $_REQUEST['descripcion'];
+  $valoracion = $_REQUEST['valoracion'];
+
+  date_default_timezone_set("America/Argentina/Buenos_Aires");
+  $comentarios[date('YmdHisU')] = array(
+    "fecha" => date('d-m-Y H:i:s'),
+    "id_producto" => $id_producto,
+    "descripcion" => $comentario,
+    "valoracion" => $valoracion,
+    "email" => "sarasa@gmail.com",
+  );
+
+  file_put_contents('../../data/comentarios.json',json_encode($comentarios));
+
+}
 
 
 ?>
@@ -45,14 +61,15 @@ $producto = $productos[$id_producto];
       <h2 class="titulo-secundario">Deje su comentario</h2>
     </div>
     <div class="col-12">
-      <form action="" method="">
+      <form action="./detalle.php" method="get" class="form-comentario">
         <div class="form-group my-4">
+          <input type="text" value="<?php echo $id_producto ?>" hidden name="id_producto" />
           <label for="email">Su email</label>
           <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ej: pepe123@gmail.com">
         </div>
         <div class="form-group my-4">
           <label for="mensaje">Deje un comentario sobre el producto</label>
-          <textarea class="form-control" id="descripcion" name="descripcion" rows="3"></textarea>
+          <textarea class="form-control" id="descripcion" name="descripcion" rows="3" maxlength="55"></textarea>
         </div>
         <div class="form-group my-4">
           <label for="valoracion">Valoración ( 1-5 )</label>
@@ -79,13 +96,13 @@ $producto = $productos[$id_producto];
     </div>
     <?php
 
-    function tienComentario($comentario)
+    function tieneComentario($comentario)
     {
       global $id_producto;
       return $comentario["id_producto"] == $id_producto;
     }
 
-    $con_comentarios = array_filter($comentarios, "tienComentario");
+    $con_comentarios = array_filter($comentarios, "tieneComentario");
 
     if (count($con_comentarios) > 0) {
       sort($con_comentarios);
@@ -95,7 +112,7 @@ $producto = $productos[$id_producto];
         <p class='autor border-bottom p-3' name='autor'><strong>De:</strong>" . $comentario["email"] . "</p>
         <p class='descripcion p-3 border' name='descripcion'>" . $comentario["descripcion"] . "</p>
         <p class='valoracion p-3' name='valoracion'> <strong>Valoración: </strong> " . $comentario["valoracion"] . "</p>
-        <p class='fecha font-weight-light p-3'>" . $comentario["fechaRealizada"] . "</p>
+        <p class='fecha font-weight-light p-3'>" . $comentario["fecha"] . "</p>
         </div>";
         }
       }
