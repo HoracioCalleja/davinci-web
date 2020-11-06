@@ -1,4 +1,4 @@
-<div class="container-fluid mb-0 mt-5 py-2 footer text-center">
+<div class="container-fluid mb-0 pb-0 mt-5 footer text-center">
   <div class="row m-auto p-3">
     <div class="col ">
       <p>Walter Molina Soto </p>

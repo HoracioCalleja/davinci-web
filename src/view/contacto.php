@@ -1,6 +1,6 @@
 <?php require('header.php') ?>
 
-<div class="container text-center">
+<div class="container text-center mt-5">
   <form action="" method="POST">
     <div class="form-row">
       <div class="form-group col-6">

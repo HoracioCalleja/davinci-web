@@ -1,5 +1,6 @@
 body{
   font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
 }
 
 :root{
@@ -13,7 +14,6 @@ body{
 /* .nav-link{
   color: white !important;
 } */
-
 
 .buscador-label{
   color : var(--main-color);
