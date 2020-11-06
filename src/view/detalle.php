@@ -11,6 +11,7 @@ if (isset($_REQUEST['id_producto'])) {
 }
 
 $productos = json_decode(file_get_contents('../../data/productos.json'), true);
+$marcas = json_decode(file_get_contents('../../data/marcas.json'), true);
 $comentarios = json_decode(file_get_contents('../../data/comentarios.json'), true);
 $producto = $productos[$id_producto];
 
@@ -26,16 +27,14 @@ if (isset($_REQUEST['email']) && isset($_REQUEST['descripcion']) && isset($_REQU
     "id_producto" => $id_producto,
     "descripcion" => $comentario,
     "valoracion" => $valoracion,
-    "email" => "sarasa@gmail.com",
+    "email" => $email,
   );
 
   file_put_contents('../../data/comentarios.json',json_encode($comentarios));
 
 }
 
-
 ?>
-
 
 <div class="container my-5 p-0">
   <div class="row text-center">
@@ -43,7 +42,7 @@ if (isset($_REQUEST['email']) && isset($_REQUEST['descripcion']) && isset($_REQU
       <a href=<?php echo $producto["imagen"] ?> target="__blank"><img src=<?php echo $producto["imagen"] ?> class="card-img-top" alt="Remera blanca nike"></a>
     </div>
     <div class="col-4 m-auto py-3 border">
-      <h2 class="py-3">Nike</h3>
+      <h2 class="py-3"><?php echo $marcas[$producto["id_marca"]]["nombre"] ?></h3>
         <p class=""> <strong> <?php echo $producto["nombre"] ?> </strong> </p>
         <p><?php echo $producto["descripcion"] ?></p>
         <p><?php foreach ($producto["talles"] as $talle) echo $talle ?></p>
