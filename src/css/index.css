@@ -11,10 +11,6 @@ body{
   background-color: var(--main-color);
 }
 
-/* .nav-link{
-  color: white !important;
-} */
-
 .buscador-label{
   color : var(--main-color);
 }

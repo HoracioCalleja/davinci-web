@@ -75,5 +75,26 @@
     "descripcion": "Enga\u00f1a la foto, es distinta.",
     "valoracion": "2",
     "email": "tester@hotmail.com"
+  },
+  "202011081658531604865533": {
+    "fecha": "08-11-2020 16:58:53",
+    "id_producto": "6",
+    "descripcion": "Me gust\u00f3 mucho la textura.",
+    "valoracion": "4",
+    "email": "sanpedro@hotmail.com"
+  },
+  "202011081706371604865997": {
+    "fecha": "08-11-2020 17:06:37",
+    "id_producto": "1",
+    "descripcion": "Medio flojo el producto...",
+    "valoracion": "2",
+    "email": "pedritoloco@hotmail.com"
+  },
+  "202011081708301604866110": {
+    "fecha": "08-11-2020 17:08:30",
+    "id_producto": "13",
+    "descripcion": "No s\u00e9 que dice tester, a mi me parecio genial.",
+    "valoracion": "4",
+    "email": "horacio@feliz.com"
   }
 }

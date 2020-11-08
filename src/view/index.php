@@ -19,7 +19,9 @@ $productos = json_decode(file_get_contents('../../data/productos.json'), true);
 
       <div class="col">
         <div class="row">
-
+          <div class="col-12 mb-4">
+            <h1 class="py-4 display-3">DESTACADOS</h1>
+          </div>
           <?php
 
           foreach ($productos as $producto) {

@@ -30,8 +30,7 @@ if (isset($_REQUEST['email']) && isset($_REQUEST['descripcion']) && isset($_REQU
     "email" => $email,
   );
 
-  file_put_contents('../../data/comentarios.json',json_encode($comentarios));
-
+  file_put_contents('../../data/comentarios.json', json_encode($comentarios));
 }
 
 ?>
@@ -104,8 +103,9 @@ if (isset($_REQUEST['email']) && isset($_REQUEST['descripcion']) && isset($_REQU
     $con_comentarios = array_filter($comentarios, "tieneComentario");
 
     if (count($con_comentarios) > 0) {
-      sort($con_comentarios);
-      foreach ($comentarios as $comentario) {
+      arsort($con_comentarios);
+      $ultimos_comentarios = array_slice($con_comentarios, 0, 3);
+      foreach ($ultimos_comentarios as $comentario) {
         if ($comentario["id_producto"] == $id_producto) {
           echo " <div class='col-12 p-4 my-3 border'>
         <p class='autor border-bottom p-3' name='autor'><strong>De:</strong>" . $comentario["email"] . "</p>

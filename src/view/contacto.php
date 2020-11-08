@@ -1,7 +1,7 @@
 <?php require('header.php') ?>
 
 <div class="container text-center mt-5">
-  <form action="" method="POST">
+  <form action="" method="get" class="form-contacto">
     <div class="form-row">
       <div class="form-group col-6">
         <label for="nombre">Nombre</label>
