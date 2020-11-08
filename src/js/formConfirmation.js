@@ -1,9 +1,9 @@
 export default function formConfirmation($forms) {
   if ($forms) {
-    $forms.forEach(($form) => {
-      if ($form) {
-        $form.addEventListener("submit", (e) => {
-          alert("Se ha enviado el mensaje correctamente.");
+    $forms.forEach((form) => {
+      if (form.selector) {
+        form.selector.addEventListener("submit", (e) => {
+          alert(form.mensaje);
         });
       }
     });
