@@ -36,8 +36,8 @@ if (isset($_REQUEST['email']) && isset($_REQUEST['descripcion']) && isset($_REQU
 ?>
 
 <div class="container my-5 p-0">
-  <div class="row text-center">
-    <div class="col-6 border py-5">
+  <div class="row mt-4 text-center">
+    <div class="col-6 border  my-4 p-5">
       <a href=<?php echo $producto["imagen"] ?> target="__blank"><img src=<?php echo $producto["imagen"] ?> class="card-img-top" alt="Remera blanca nike"></a>
     </div>
     <div class="col-4 m-auto py-3 border">
