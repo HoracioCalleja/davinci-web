@@ -9,6 +9,7 @@ body{
 
 .barra-navegacion{
   background-color: var(--main-color);
+  color: white;
 }
 
 .buscador-label{

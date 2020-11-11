@@ -20,9 +20,9 @@ if (isset($_REQUEST['id_categoria'])) {
 
 
 <main>
-  <div class="container-fluid mt-4">
-
-    <div class="row px-5 text-center">
+  <div class="container-fluid mt-5">
+    <div class="row px-5 text-center mt-5">
+      <div class="col-12 my-5"><h1 class="display-3" >PRODUCTOS</h1></div>
 
       <?php require('aside.php') ?>
 

@@ -127,4 +127,4 @@ if (isset($_REQUEST['email']) && isset($_REQUEST['descripcion']) && isset($_REQU
 </div>
 
 
-<?php require('footer.php') ?>;
+<?php require('footer.php') ?>

@@ -21,17 +21,17 @@
 
     ?>
 
-    <nav class="navbar barra-navegacion navbar-expand-lg navbar-light ">
+    <nav class="navbar barra-navegacion navbar-expand-lg navbar-light fixed-top">
       <a class="navbar-brand pl-3 nav-link" href="./index.php">ComercioDavinci</a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav pl-3">
-          <a class="nav-item nav-link inicio <?php Activo('index') ?>" href="./index.php">Inicio</a>
-          <a class="nav-item nav-link productos <?php Activo('listado') ?> " href="./listado.php">Productos</a>
-          <a class="nav-item nav-link contacto <?php Activo('contacto') ?> " href="./contacto.php">Contacto</a>
+        <div class="navbar-nav nav-container pl-3">
+          <a class="nav-item nav-link  inicio <?php Activo('index') ?>" href="./index.php">Inicio</a>
+          <a class="nav-item nav-link  productos <?php Activo('listado') ?> " href="./listado.php">Productos</a>
+          <a class="nav-item nav-link  contacto <?php Activo('contacto') ?> " href="./contacto.php">Contacto</a>
         </div>
       </div>
     </nav>
