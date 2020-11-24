@@ -1,0 +1,18 @@
+[
+  {
+    "nombre": "Horacio",
+    "apellido": "Calleja",
+    "telefono": "1134563761",
+    "email": "asd@asd.com",
+    "consulta": "Quiero hablar con el gerente",
+    "departamento": "general"
+  },
+  {
+    "nombre": " Horacio",
+    "apellido": "Calleja",
+    "telefono": "1231232132",
+    "email": "fxdbgxdg@hotmail.com",
+    "consulta": "Hola probando",
+    "departamento": "ventas"
+  }
+]
