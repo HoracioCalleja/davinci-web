@@ -1,4 +1,19 @@
-<?php require('header.php') ?>
+<head>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<link rel="stylesheet" href="estilos.css">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</head>
+
+
+
+
+
+
+
 
 <?php
 
@@ -9,6 +24,8 @@ if (isset($_REQUEST['id_producto'])) {
 } else {
   $id_producto = '';
 }
+
+
 
 $productos = json_decode(file_get_contents('../../data/productos.json'), true);
 $marcas = json_decode(file_get_contents('../../data/marcas.json'), true);
@@ -31,9 +48,58 @@ if (isset($_REQUEST['email']) && isset($_REQUEST['descripcion']) && isset($_REQU
   );
 
   file_put_contents('../../data/comentarios.json', json_encode($comentarios));
+
+
+  
+
+ ?>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Gracias por comentar: <?php echo $email ?></p> 
+    <p> Tu comentario fue:</p> <?php echo $comentario ?> 
+  </div>
+
+</div>
+
+<script>
+
+var modal = document.getElementById("myModal");
+  modal.style.display = "block";
+
+  setTimeout(() => {
+  modal.style.display = "none";
+}, 3500);
+
+  var span = document.getElementsByClassName("close")[0];
+  span.onclick = function() {
+  modal.style.display = "none";
+
+
+
 }
 
+</script>
+
+<!--   <div class="alert alert-warning alert-dismissible fade show" role="alert" id="sucess_alert">
+  <strong>Gracias por comentar, <?php echo $email ?> </strong> Tu comentario fue: <?php echo $comentario ?> 
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div> -->
+
+<?php
+
+}
+
+
 ?>
+
+
 
 <div class="container my-5 p-0">
   <div class="row mt-4 text-center">
@@ -129,5 +195,51 @@ if (isset($_REQUEST['email']) && isset($_REQUEST['descripcion']) && isset($_REQU
   </div>
 </div>
 
+<script>
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+
+<!-- <script>
+
+
+$(document).ready(
+  
+  function () {
+
+    $('#sucess_alert').fadeTo(2000,500).slideUp(500, function ()
+    {
+      $('#sucess_alert').slideUp(500);
+    });
+  });
+
+</script> -->
+
 
 <?php require('footer.php') ?>
+
