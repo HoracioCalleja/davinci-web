@@ -14,6 +14,18 @@ if (isset($_REQUEST['nombre']) && isset($_REQUEST['apellido']) && isset($_REQUES
   $consultas = json_decode(file_get_contents('../../data/consultas.json'), true);
   array_push($consultas, $consulta_nueva);
   file_put_contents('../../data/consultas.json', json_encode($consultas));
+?>
+
+  <div class="alert alert-success alert-dismissible fade show mt-5 alerta" role="alert">
+    <strong>Consulta enviada. Usuario: <?php echo $nombre;
+                                        echo " ";
+                                        echo $apellido ?> </strong>. Departamento: <?php echo $departamento ?>.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+<?php
 }
 
 ?>
@@ -63,5 +75,9 @@ if (isset($_REQUEST['nombre']) && isset($_REQUEST['apellido']) && isset($_REQUES
   </form>
 </div>
 
+<script>
+  let alerta = document.querySelector('.alerta');
+  setTimeout(() => alerta.style.display = "none", 3000);
+</script>
 
 <?php require('footer.php') ?>

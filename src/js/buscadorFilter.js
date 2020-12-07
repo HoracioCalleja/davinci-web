@@ -13,7 +13,7 @@ export function buscador(buscadorSelector, productosSelector) {
           .querySelector(".producto-descripcion")
           .textContent.toLowerCase();
         if (
-          !productoNombre.includes($buscador.value) ||
+          !productoNombre.includes($buscador.value) &&
           !productoDescripcion.includes($buscador.value)
         ) {
           $producto.classList.add("ocultar");

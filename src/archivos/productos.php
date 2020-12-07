@@ -11,6 +11,7 @@ $productos = array(
     "descripcion" => "Remera negra nike de algodón",
     "imagen" => "../img/nike_negra.jpg",
     "destacado" => true,
+    "nuevo" => true,
   ),
   2 => array(
     "id" => 2,
@@ -22,6 +23,7 @@ $productos = array(
     "descripcion" => "Pantalón puma relajado",
     "imagen" => "../img/pantalon_puma1.jpg",
     "destacado" => false,
+    "nuevo" => true,
   ),
   3 => array(
     "id" => 3,
@@ -33,6 +35,7 @@ $productos = array(
     "descripcion" => "Pantalón nike cómodo",
     "imagen" => "../img/pantalon_nike1.jpg",
     "destacado" => true,
+    "nuevo" => false,
   ),
   4 => array(
     "id" => 4,
@@ -44,6 +47,7 @@ $productos = array(
     "descripcion" => "Zapatilla takawishi pirusa",
     "imagen" => "../img/zapatilla_nike1.jpg",
     "destacado" => false,
+    "nuevo" => false,
   ),
   5 => array(
     "id" => 5,
@@ -55,6 +59,7 @@ $productos = array(
     "descripcion" => "Remera puma tira blanca",
     "imagen" => "../img/remera_puma1.jpg",
     "destacado" => true,
+    "nuevo" => false,
   ),
   6 => array(
     "id" => 6,
@@ -66,6 +71,7 @@ $productos = array(
     "descripcion" => "Zapatilla rsx-221 anase",
     "imagen" => "../img/zapatilla_puma1.jpg",
     "destacado" => false,
+    "nuevo" => true,
   ),
   7 => array(
     "id" => 7,
@@ -77,6 +83,7 @@ $productos = array(
     "descripcion" => "Remera adidas x Pharrell Williams",
     "imagen" => "../img/remera_adidas1.jpg",
     "destacado" => true,
+    "nuevo" => false,
   ),
   8 => array(
     "id" => 8,
@@ -88,6 +95,7 @@ $productos = array(
     "descripcion" => "Pantalón adidas de entrenamiento",
     "imagen" => "../img/pantalon_adidas1.jpg",
     "destacado" => false,
+    "nuevo" => false,
   ),
   9 => array(
     "id" => 9,
@@ -99,6 +107,7 @@ $productos = array(
     "descripcion" => "Zapatila adidas boost Yeezy 700 OG",
     "imagen" => "../img/zapatilla_adidas1.jpg",
     "destacado" => false,
+    "nuevo" => true,
   ),
   10 => array(
     "id" => 10,
@@ -110,6 +119,7 @@ $productos = array(
     "descripcion" => "Remera crossfit reebok",
     "imagen" => "../img/remera_reebok1.jpg",
     "destacado" => true,
+    "nuevo" => false,
   ),
   11 => array(
     "id" => 11,
@@ -121,6 +131,7 @@ $productos = array(
     "descripcion" => "Pantalón casual reebok",
     "imagen" => "../img/pantalon_reebok1.jpg",
     "destacado" => false,
+    "nuevo" => false,
   ),
   12 => array(
     "id" => 12,
@@ -132,6 +143,7 @@ $productos = array(
     "descripcion" => "Zapatilla reebok Allen Iverson 2003",
     "imagen" => "../img/zapatilla_reebok1.jpg",
     "destacado" => false,
+    "nuevo" => true,
   ),
   13 => array(
     "id" => 13,
@@ -143,6 +155,7 @@ $productos = array(
     "descripcion" => "Remera asics de entrenamiento prolongado",
     "imagen" => "../img/remera_asics1.jpg",
     "destacado" => true,
+    "nuevo" => false,
   ),
   14 => array(
     "id" => 14,
@@ -154,6 +167,7 @@ $productos = array(
     "descripcion" => "Pantalón Asics",
     "imagen" => "../img/pantalon_asics1.jpg",
     "destacado" => false,
+    "nuevo" => false,
   ),
   15 => array(
     "id" => 15,
@@ -165,6 +179,7 @@ $productos = array(
     "descripcion" => "Zapatilla asics",
     "imagen" => "../img/zapatilla_asics1.jpg",
     "destacado" => false,
+    "nuevo" => false,
   ),  
 );
 
